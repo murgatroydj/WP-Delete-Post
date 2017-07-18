@@ -1,11 +1,10 @@
 <?php 
-  
 /*
-Plugin Name: WP Delete Post
-Description: Remove a single wordpress post by going to /wp-admin/index.php?delete_post=[post_id}
-Version: 0.1
-Author: James Murgatroyd Communications
-License: GPL2
+  Plugin Name: WP Delete Post
+  Description: Remove a single wordpress post by going to /wp-admin/index.php?delete_post=[post_id}
+  Version: 0.1
+  Author: James Murgatroyd Communications
+  License: GPL2
 */
 
 // set global scope vars 
@@ -48,10 +47,8 @@ function manually_delete_post(){
     }
 }
 
-
 // Add Admin Notice
 add_action( 'admin_notices', 'my_notice' );
-
 
 function my_notice() {
   // get global vars
